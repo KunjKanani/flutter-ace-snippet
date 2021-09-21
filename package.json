@@ -1,0 +1,27 @@
+{
+    "name": "flutter-ace-snippet",
+    "displayName": "Flutter Ace Snippet",
+    "description": "Flutter Ace Snippet collection of best snippets available for flutter. It supports Provider and GetX as well. Once you use it, fall in love with Flutter Ace.", 
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.54.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "keywords": [
+        "Flutter",
+        "Dart",
+        "Snippets",
+        "Flutter Ace",
+        "Ace"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "dart",
+                "path": "./snippets/flutter-ace-snippet.json"
+            }
+        ]
+    }
+}

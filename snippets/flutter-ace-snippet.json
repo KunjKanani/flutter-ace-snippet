@@ -1,0 +1,619 @@
+{
+    "Initial Flutter Project": {
+        "prefix": "newFlutterApp",
+        "body": [
+            "import 'package:flutter/material.dart';\n",
+            "void main() {",
+            "\trunApp(${1:MyApp}());",
+            "}\n",
+            "class $1 extends StatelessWidget {",
+            "\tconst $1({ Key? key }) : super(key: key);\n",
+            "\t@override",
+            "\tWidget build(BuildContext context) {",
+            "\t\treturn MaterialApp(",
+            "\t\t\thome: Scaffold(",
+            "\t\t\t\tappBar: AppBar(",
+            "\t\t\t\t\ttitle: Text(\"${2:Hello World}\"),",
+            "\t\t\t\t\tbackgroundColor: Colors.purple,",
+            "\t\t\t\t),",
+            "\t\t\t\tbody: Container(),",
+            "\t\t\t),",
+            "\t\t);",
+            "\t}",
+            "}"
+        ],
+        "description": "Initial Flutter Project"
+    },
+    "Initial Flutter App With Provider": {
+        "prefix": "newFlutterAppProvider",
+        "body": [
+            "import 'package:flutter/material.dart';",
+            "import 'package:provider/provider.dart';\n",
+            "void main() {",
+            "\trunApp(",
+            "\t\tChangeNotifierProvider(",
+            "\t\t\tcreate: (context) => ${1:MySchedule}(),",
+            "\t\t\tchild: ${2:MyApp}(),",
+            "\t\t),",
+            "\t);",
+            "}",
+            "class $2 extends StatelessWidget {",
+            "\tconst $2({ Key? key }) : super(key: key);\n",
+            "\t@override",
+            "\tWidget build(BuildContext context) {",
+            "\t\treturn MaterialApp(",
+            "\t\t\thome: Scaffold(",
+            "\t\t\t\tappBar: AppBar(",
+            "\t\t\t\t\ttitle: Text(\"${3:Hello World}\"),",
+            "\t\t\t\t\tbackgroundColor: Colors.purple,",
+            "\t\t\t\t),",
+            "\t\t\t\tbody: Container(),",
+            "\t\t\t),",
+            "\t\t);",
+            "\t}",
+            "}"
+        ],
+        "description": "Initial Flutter App With Provider"
+    },
+    "Initial Flutter App With GetX": {
+        "prefix": "newFlutterAppGet",
+        "body": [
+            "import 'package:flutter/material.dart';",
+            "import 'package:get/get.dart';\n",
+            "void main() {",
+            "\trunApp(${1:MyApp}());",
+            "}\n",
+            "class $1 extends StatelessWidget {",
+            "\tconst $1({ Key? key }) : super(key: key);\n",
+            "\t@override",
+            "\tWidget build(BuildContext context) {",
+            "\t\treturn GetMaterialApp(",
+            "\t\t\tinitialBinding: ${3:Bindings}(),",
+            "\t\t\tinitialRoute: \"${4:/}\",",
+            "\t\t\thome: Scaffold(",
+            "\t\t\t\tappBar: AppBar(",
+            "\t\t\t\t\ttitle: Text(\"${5:Get Hello World}\"),",
+            "\t\t\t\t\tbackgroundColor: Colors.purple,",
+            "\t\t\t\t),",
+            "\t\t\t\tbody: Container(),",
+            "\t\t\t),",
+            "\t\t);",
+            "\t}",
+            "}"
+        ],
+        "description": "Initial Flutter App With GetX"
+    },
+    "Import Material Package": {
+        "prefix": "imm",
+        "body": "import 'package:flutter/material.dart';",
+        "description": "Import Material Package"
+    },
+    "Import Cupertino Package": {
+        "prefix": "imc",
+        "body": "import 'package:flutter/cupertino.dart';",
+        "description": "Import Cupertino Package"
+    },
+    "Import Provider Package": {
+        "prefix": "imProvider",
+        "body": "import 'package:provider/provider.dart';",
+        "description": "Import Provider Package"
+    },
+    "Import Provider Get": {
+        "prefix": "imGet",
+        "body": "import 'package:get/get.dart';",
+        "description": "Import Provider Get"
+    },
+    "Container Widget": {
+        "prefix": "container",
+        "body": [
+            "Container(",
+            "\tchild: ${1:Text(\"Container\")},",
+            ")"
+        ],
+        "description": "Container Widget"
+    },
+    "Padding All": {
+        "prefix": "padAll",
+        "body": "padding: EdgeInsets.all(${1:8}),",
+        "description": "Padding All (With EdgeInSets)"
+    },
+    "Padding Only": {
+        "prefix": "padOnly",
+        "body": "padding: EdgeInsets.only($1),",
+        "description": "Padding Only (With EdgeInSets)"
+    },
+    "Padding FromLTRB": {
+        "prefix": "padLTRB",
+        "body": "padding: EdgeInsets.fromLTRB(${1:left}, ${2:top}, ${3:right}, ${4:bottom}),",
+        "description": "Padding FromLTRB (With EdgeInSets)"
+    },
+    "Padding Symmetric": {
+        "prefix": "padSym",
+        "body": "padding: EdgeInsets.symmetric(horizontal: ${1:0}, vertical: ${2:0}),",
+        "description": "Padding Symmetric (With EdgeInSets)"
+    },
+    "Margin All": {
+        "prefix": "marAll",
+        "body": "margin: EdgeInsets.all(${1:8}),",
+        "description": "margin All (With EdgeInSets)"
+    },
+    "Margin Only": {
+        "prefix": "marOnly",
+        "body": "margin: EdgeInsets.only($1),",
+        "description": "margin Only (With EdgeInSets)"
+    },
+    "Margin FromLTRB": {
+        "prefix": "marLTRB",
+        "body": "margin: EdgeInsets.fromLTRB(${1:left}, ${2:top}, ${3:right}, ${4:bottom}),",
+        "description": "margin FromLTRB (With EdgeInSets)"
+    },
+    "Margin Symmetric": {
+        "prefix": "marSym",
+        "body": "margin: EdgeInsets.symmetric(horizontal: ${1:0}, vertical: ${2:0}),",
+        "description": "margin Symmetric (With EdgeInSets)"
+    },
+    "Row Widget": {
+        "prefix": "row",
+        "body": [
+            "Row(",
+            "\tcrossAxisAlignment: CrossAxisAlignment.${1:center},",
+            "\tmainAxisAlignment: MainAxisAlignment.${2:start},",
+            "\tchildren: [",
+            "\t\t$3",
+            "\t],",
+            ")"
+        ],
+        "description": "Row Widget"
+    },
+    "Column Widget": {
+        "prefix": "col",
+        "body": [
+            "Column(",
+            "\tcrossAxisAlignment: CrossAxisAlignment.${1:center},",
+            "\tmainAxisAlignment: MainAxisAlignment.${2:start},",
+            "\tchildren: [",
+            "\t\t$3",
+            "\t],",
+            ")"
+        ],
+        "description": "Column Widget"
+    },
+    "Text Widget": {
+        "prefix": "text",
+        "body": [
+            "Text(",
+            "\t\"${1:Text}\",",
+            "\tstyle: TextStyle($2),",
+            ")"
+        ],
+        "description": "Text Widget"
+    },
+    "SingleChildScrollView Widget": {
+        "prefix": "scsv",
+        "body": [
+            "SingleChildScrollView(",
+            "\tchild: ${1:Container()},",
+            ")"
+        ],
+        "description": "SingleChildScrollView Widget"
+    },
+    "GestureDetector Widget": {
+        "prefix": "gd",
+        "body": [
+            "GestureDetector(",
+            "\tonTap: (){",
+            "\t\t$1",
+            "\t},",
+            "\tchild: ${2:Container()},",
+            ")"
+        ],
+        "description": "GestureDetector Widget"
+    },
+    "Sizedbox With Width & Height": {
+        "prefix": "sb",
+        "body": [
+            "SizedBox(",
+            "\theight: ${1:0},",
+            "\twidth: ${2:0},",
+            "\tchild: ${3:Container()},",
+            ")"
+        ],
+        "description": "Sizedbox With Width & Height"
+    },
+    "Sizedbox With Width Widget": {
+        "prefix": "sbW",
+        "body": [
+            "SizedBox(",
+            "\twidth: ${1:0},",
+            "\tchild: ${2:Container()},",
+            ")"
+        ],
+        "description": "Sizedbox With Width Widget"
+    },
+    "Sizedbox With Height Widget": {
+        "prefix": "sbH",
+        "body": [
+            "SizedBox(",
+            "\theight: ${1:0},",
+            "\tchild: ${2:Container()},",
+            ")"
+        ],
+        "description": "Sizedbox With Height Widget"
+    },
+    "MediaQuery Width": {
+        "prefix": "width",
+        "body": "width: MediaQuery.of(context).size.width,",
+        "description": "MediaQuery Width"
+    },
+    "MediaQuery Height": {
+        "prefix": "height",
+        "body": "height: MediaQuery.of(context).size.height,",
+        "description": "MediaQuery Height"
+    },
+    "Image Asset": {
+        "prefix": "imgA",
+        "body": [
+            "Image.asset(",
+            "\t\"assets/${1:filename}\",",
+            "\twidth: ${2:0},",
+            "\theight: ${3:0},",
+            ")"
+        ],
+        "description": "Image Asset"
+    },
+    "Image Network": {
+        "prefix": "imgN",
+        "body": [
+            "Image.network(",
+            "\t\"${1:URL}\",",
+            "\twidth: ${2:0},",
+            "\theight: ${3:0},",
+            ")"
+        ],
+        "description": "Image Network"
+    },
+    "Image File": {
+        "prefix": "imgF",
+        "body": [
+            "Image.file(",
+            "\t${1:fileObject},",
+            "\twidth: ${2:0},",
+            "\theight: ${3:0},",
+            ")"
+        ],
+        "description": "Image File"
+    },
+    "ListView Builder": {
+        "prefix": "lvBuild",
+        "body": [
+            "ListView.builder(",
+            "\titemCount: ${1:0},",
+            "\tshrinkWrap: ${2:true},",
+            "\tscrollDirection: Axis.${3:vertical},",
+            "\titemBuilder: (context, index) {",
+            "\t\treturn ${4:Text(\"ListView.builder\")};",
+            "\t},",
+            ")"
+        ],
+        "description": "ListView Builder"
+    },
+    "ListView Separated": {
+        "prefix": "lvSeparated",
+        "body": [
+            "ListView.separated(",
+            "\titemCount: ${1:0},",
+            "\tshrinkWrap: ${2:true},",
+            "\titemBuilder: (context, index) {",
+            "\t\treturn ${3:Text(\"ListView.separated\")};",
+            "\t},",
+            "\tseparatorBuilder: (context, index) {",
+            "\t\treturn Divider(",
+            "\t\t\theight: ${4:2},",
+            "\t\t\tcolor: Colors.${5:grey},",
+            "\t\t);",
+            "\t},",
+            ")"
+        ],
+        "description": "ListView Separated"
+    },
+    "GridView Builder": {
+        "prefix": "gvBuild",
+        "body": [
+            "GridView.builder(",
+            "\tgridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: ${1:3}),",
+            "\titemCount: ${2:0},",
+            "\tshrinkWrap: ${3:true},",
+            "\titemBuilder: (context, index) {",
+            "\t\treturn ${4:Text(\"GridView.Builder\")};",
+            "\t},",
+            ")"
+        ],
+        "description": "GridView Builder"
+    },
+    "GridView Count": {
+        "prefix": "gvCount",
+        "body": [
+            "GridView.count(",
+            "\tcrossAxisCount: ${1:3},",
+            "\tshrinkWrap: ${2:true},",
+            "\tchildren: [",
+            "\t\t${3:Text(\"Gridview.count\")},",
+            "\t],",
+            ")"
+        ],
+        "description": "GridView Count"
+    },
+    "GridView Extent": {
+        "prefix": "gvExtent",
+        "body": [
+            "GridView.extent(",
+            "\tmaxCrossAxisExtent: ${1:100},",
+            "\tshrinkWrap: ${2:true},",
+            "\tchildren: [",
+            "\t\t${3:Text(\"Gridview.count\")},",
+            "\t],",
+            ")"
+        ],
+        "description": "GridView Extent"
+    },
+    "PageView Builder": {
+        "prefix": "pvBuild",
+        "body": [
+            "PageView.builder(",
+            "\titemCount: ${1:3},",
+            "\titemBuilder: (context, index) {",
+            "\t\treturn ${2:Container(",
+            "\t\t\tmargin: EdgeInsets.symmetric(horizontal: 10, vertical: 10),",
+            "\t\t\tdecoration: BoxDecoration(",
+            "\t\t\t\tcolor: Colors.purple,",
+            "\t\t\t\tborderRadius: BorderRadius.circular(10),",
+            "\t\t\t),",
+            "\t\t\tchild: Text(",
+            "\t\t\t\t\"PageView\",",
+            "\t\t\t\tstyle: TextStyle(color: Colors.white),",
+            "\t\t\t),",
+            "\t\t)};",
+            "\t},",
+            ")"
+        ],
+        "description": "PageView Builder"
+    },
+    "Make List With Type": {
+        "prefix": "list",
+        "body": "List<${1:String}> ${2:listName} = [\n\t$3\n];",
+        "description": "Make List With Type"
+    },
+    "Border Radius Circular": {
+        "prefix": "brCircular",
+        "body": "borderRadius: BorderRadius.circular(${1:10}),",
+        "description": "Border Radius Circular"
+    },
+    "Border Radius All": {
+        "prefix": "brAll",
+        "body": "borderRadius: BorderRadius.all(Radius.circular(${1:10})),",
+        "description": "Border Radius All"
+    },
+    "Color Hex": {
+        "prefix": "colorHax",
+        "body": "color: Color(0xFF${1:9C27B0}),",
+        "description": "Color Hex"
+    },
+    "Custom Clipper": {
+        "prefix": "cClipper",
+        "body": [
+            "${1:import 'package:flutter/cupertino.dart';}",
+            "class ${2:Name}Clipper extends CustomClipper<Path> {\n",
+            "\t@override",
+            "\tPath getClip(Size size) {",
+            "\t\t${3:// TODO: implement getClip}",
+            "\t\tthrow UnimplementedError();",
+            "\t}\n",
+            "\tbool shouldReclip(covariant CustomClipper<Path> oldClipper) => ${4:false};",
+            "}"
+        ],
+        "description": "Custom Clipper"
+    },
+    "Custom Painter ": {
+        "prefix": "cPainter",
+        "body": [
+            "${1:import 'package:flutter/material.dart';}\n",
+            "class ${2:name}Painter extends CustomPainter {",
+            "",
+            "\t@override",
+            "\tvoid paint(Canvas canvas, Size size) {",
+            "\t}",
+            "",
+            "\t@override\n",
+            "\tbool shouldRepaint(${2:name}Painter oldDelegate) => false;",
+            "",
+            "\t@override\n",
+            "\tbool shouldRebuildSemantics(${2:name}Painter oldDelegate) => false;",
+            "}"
+        ],
+        "description": "Custom Painter"
+    },
+    "Stream Builder": {
+        "prefix": "streamBuild",
+        "body": [
+            "StreamBuilder(",
+            "\tstream: ${1:stream},",
+            "\tinitialData: ${2:initalData},",
+            "\tbuilder: (BuildContext context, ${3:AsyncSnapshot} snapshot) {",
+            "\t\treturn ${4:Text(\"Stream Builder\")};",
+            "\t},",
+            ")"
+        ],
+        "description": "Stream Builder"
+    },
+    "Animated Builder": {
+        "prefix": "animatedBuild",
+        "body": [
+            "AnimatedBuilder(",
+            "\tanimation: ${1:animation},",
+            "\tchild: ${2:child},",
+            "\tbuilder: (context, child) {",
+            "\t\treturn ${4:Text(\"Animated Builder\")};",
+            "\t},",
+            ")"
+        ],
+        "description": "Animated Builder"
+    },
+    "Layout Builder": {
+        "prefix": "layoutBuild",
+        "body": [
+            "LayoutBuilder(",
+            "\tbuilder: (BuildContext context, BoxConstraints constraints) {",
+            "\t\treturn ${1:Text(\"Layout Builder\")};",
+            "\t},",
+            ")"
+        ],
+        "description": "Layout Builder"
+    },
+    "Future Builder": {
+        "prefix": "futureBuild",
+        "body": [
+            "FutureBuilder(",
+            "\tfuture: ${1:future},",
+            "\tinitialData: ${2:initialData},",
+            "\tbuilder: (context, snapshot) {",
+            "\t\treturn ${3:Text(\"Future Builder\")};",
+            "\t},",
+            ")"
+        ],
+        "description": "Future Builder"
+    },
+    "TweenAnimation Builder": {
+        "prefix": "tweenBuild",
+        "body": [
+            "TweenAnimationBuilder(",
+            "\tduration: const Duration($1),",
+            "\ttween: ${2:Tween()},",
+            "\tbuilder: (BuildContext context, ${3:dynamic} value, Widget? child) {",
+            "\t\treturn ${4:Text(\"Tween Animation Builder\")};",
+            "\t},",
+            "),"
+        ],
+        "description": "TweenAnimation Builder"
+    },
+    "Provider ChangeNotifier Controller": {
+        "prefix": "changeNotifier",
+        "body": [
+            "import 'package:flutter/material.dart';\n",
+            "class ${1:MySchedule} extends ChangeNotifier {",
+            "\t${2:int} _${3:count} = ${4:0};\n",
+            "\t$2 get $3 => _$3;\n",
+            "\tset $3($2 value) {",
+            "\t\t_$3 = value;",
+            "\t\tnotifyListeners();",
+            "\t}",
+            "}"
+        ],
+        "description": "Provider ChangeNotifier Controller"
+    },
+    "Provider Consumer": {
+        "prefix": "consumer",
+        "body": [
+            "Consumer<${1:T}>(",
+            "\tbuilder: (context, value, child) {",
+            "\t\treturn ${2:Text(\"Provider Consumer\")};",
+            "\t},",
+            ")"
+        ],
+        "description": "Provider Consumer"
+    },
+
+    "GetX Controller": {
+		"prefix": "getController",
+		"body": [
+			"import 'package:get/get.dart';\n",
+			"class ${1:Name}Controller extends GetxController {",
+			"\tvar ${2:number} = 0.obs;",
+			"\tvoid changeValue(val) => ${2:number}.value = val;",
+			"}"
+		],
+		"description": "GetX Controller"
+	},
+	"GetX Binding": {
+		"prefix": "getBinding",
+		"body": [
+			"import 'package:get/get.dart';\n",
+			"class ${1:Home}Bindings extends Bindings {\n",
+			"\t@override",
+			"\tvoid dependencies() {",
+			"\t\tGet.put<${2:Controller1}>(${2:Controller1}());",
+			"\t}",
+			"}"
+		],
+		"description": "GetX Binding"
+	},
+	"Get Builder": {
+		"prefix": "getBuilder",
+		"body": [
+			"GetBuilder<${1:Controller}>(",
+			"\tinit: ${1:Controller}(),",
+			"\tbuilder: (controller) {",
+			"\t\treturn ${2:Text(\"Get Builder\")};",
+			"\t},",
+			")"
+		],
+		"description": "Get Builder"
+	},
+	"GetX": {
+		"prefix": "getX",
+		"body": [
+			"GetX<${1:Controller}>(",
+			"\tinit: ${1:Controller}(),",
+			"\tbuilder: (controller) {",
+			"\t\treturn ${2:Text(\"GetX\")};",
+			"\t},",
+			")"
+		],
+		"description": "GetX"
+	},
+	"MixinBuilder": {
+		"prefix": "mixingBuilder",
+		"body": [
+			"MixinBuilder<${1:Controller}>(",
+			"\tinit: ${1:Controller}(),",
+			"\tbuilder: (controller) {",
+			"\t\treturn ${2:Text(\"Mixing Builder\")};",
+			"\t},",
+			")"
+		],
+		"description": "MixinBuilder"
+	},
+	"Get Width": {
+		"prefix": "gwidth",
+		"body": "width: Get.size.width,",
+		"description": "Get Width"
+	},
+	"Get height": {
+		"prefix": "gheight",
+		"body": "height: Get.size.height,",
+		"description": "Get height"
+	},
+
+    "Navigator Push": {
+        "prefix": "navigatorPush",
+        "body": [
+            "Navigator.push(",
+              "\tcontext,",
+              "\tMaterialPageRoute(",
+                "\t\tbuilder: (context) => ${1:MyHomePage}(),",
+              "\t),",
+            ");"
+        ],
+        "description": "Navigator Push"
+    },
+    "Navigator Pop": {
+        "prefix": "navigatorPop",
+        "body": "Navigator.pop(context);",
+        "description": "Navigator Pop"
+    },
+
+    "Navigator PushName": {
+        "prefix": "navigatorPushName",
+        "body": "Navigator.pushNamed(context, \"/${1:myHomePage}\");",
+        "description": "Navigator PushName"
+    }
+}
