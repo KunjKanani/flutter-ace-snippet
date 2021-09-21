@@ -3,8 +3,23 @@
     "displayName": "Flutter Ace Snippet",
     "description": "Flutter Ace Snippet collection of best snippets available for flutter. It supports Provider and GetX as well. Once you use it, fall in love with Flutter Ace.", 
     "version": "1.0.0",
+    "icon": "logo.png",
+    "publisher": "Kunj Kanani",
     "engines": {
         "vscode": "^1.54.0"
+    },
+    "homepage": "https://github.com/KunjKanani/flutter-ace-snippet",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/KunjKanani/flutter-ace-snippet.git"
+    },
+    "bugs": {
+        "url": "https://github.com/KunjKanani/flutter-ace-snippet/issues",
+        "email": "kunjkanani27@gmail.com"
+    },
+    "galleryBanner": {
+        "color": "#152349",
+        "theme": "dark"
     },
     "categories": [
         "Snippets"
