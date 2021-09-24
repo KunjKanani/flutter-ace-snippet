@@ -42,7 +42,7 @@ imc | import 'package:flutter/cupertino.dart';
 imGet | import 'package:get/get.dart';
 imProvider | import 'package:provider/provider.dart';
 
-| Basic Widget Snippets |||
+|| Basic Widget Snippets ||
 ----------- | ----------- | ----------- |
 **Prefix** | **Description** | **Code** |
 container | Gives Container Widgets | Container(<br>&nbsp; child: Text("Container"),<br>)
