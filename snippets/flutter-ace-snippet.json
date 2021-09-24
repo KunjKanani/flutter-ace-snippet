@@ -350,7 +350,7 @@
             "\tmaxCrossAxisExtent: ${1:100},",
             "\tshrinkWrap: ${2:true},",
             "\tchildren: [",
-            "\t\t${3:Text(\"Gridview.count\")},",
+            "\t\t${3:Text(\"Gridview.extent\")},",
             "\t],",
             ")"
         ],
