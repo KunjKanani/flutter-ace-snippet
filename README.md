@@ -85,7 +85,7 @@ cPainter | Gives a class that exetnds CustomPainter with override method |  impo
 || Margin & Padding Snippets ||
 ----------- | ----------- | ----------- |
 **Prefix** | **Description** | **Code** |
-padAll &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Gives a padding property with EdgeInsets.All() method with inital parameter | padding: EdgeInsets.all(8), 
+padAll | Gives a padding property with EdgeInsets.All() method with inital parameter | padding: EdgeInsets.all(8), 
 padLTRB | Gives a padding property with EdgeInsets.fromLTRB() method with inital parameter | padding: EdgeInsets.fromLTRB(left, top, right, bottom),
 padSym | Gives a padding property with EdgeInsets.symmetric() method with inital parameter | padding: EdgeInsets.symmetric(horizontal: 0, vertical: 0),
 padOnly | Gives a padding property with EdgeInsets.only() method | padding: EdgeInsets.only(),
