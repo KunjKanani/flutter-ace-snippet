@@ -7,10 +7,11 @@ Flutter Ace Snippet is collection of best snippets for flutter devs. Once you us
 ---
 
 ## Features
-- Write code with 10X speed
+- Write code with `10X` speed
 - It is `Easiest & Best snippets` available in market.
-- Required parameter will autocomplete
-- Supports complax widgets (Eg. PageView.builder, CustomPainter and Controllers for Getx & Provider)
+- `Required parameter` will autocomplete
+- Supports `complax widgets` (Eg. PageView.builder, CustomPainter and Controllers for Getx & Provider)
+- `Dynamic cursor` for speed up coding
 
 ## Snippets
 - We have huge amount of snippets for flutter.
@@ -125,7 +126,7 @@ gHeight | Gives height property with Get Width | height: Get.size.height,
 1. `MacOs`, `Windows` & `Linux`
 1. VScode version: `^1.54.0`
 ## Known Issues
-If you will find any issue in extension then feel free to generate issue and you can make PR as well.
+If you will find any `issue` in extension then feel free to `generate issue and you can make PR` as well.
 ## Release Notes
 ### 1.0.0
 
