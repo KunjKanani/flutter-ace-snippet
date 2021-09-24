@@ -583,12 +583,12 @@
 		"description": "MixinBuilder"
 	},
 	"Get Width": {
-		"prefix": "gwidth",
+		"prefix": "gWidth",
 		"body": "width: Get.size.width,",
 		"description": "Get Width"
 	},
 	"Get height": {
-		"prefix": "gheight",
+		"prefix": "gHeight",
 		"body": "height: Get.size.height,",
 		"description": "Get height"
 	},
