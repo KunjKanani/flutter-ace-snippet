@@ -45,7 +45,7 @@ imProvider | import 'package:provider/provider.dart';
 | Basic Widget Snippets |||
 ----------- | ----------- | ----------- |
 **Prefix** | **Description** | **Code** |
-container | Gives Container Widgets | <code>Container(<br>&nbsp; child: Text("Container"),<br>)</code>
+container | Gives Container Widgets | Container(<br>&nbsp; child: Text("Container"),<br>)
 row | Gives Row Widgets | <code>Row(<br>&nbsp;crossAxisAlignment: CrossAxisAlignment.center,<br> &nbsp;mainAxisAlignment: MainAxisAlignment.start,<br>&nbsp;children: [],<br>)</code>
 col | Gives Column Widgets | <code>Column(<br>&nbsp;crossAxisAlignment: CrossAxisAlignment.center,<br>&nbsp;mainAxisAlignment: MainAxisAlignment.start,<br>&nbsp;children: [],<br>)</code>
 text | Gives Text Widget | <code>Text(<br>&nbsp;"Text",<br>&nbsp;style: TextStyle(),<br>)</code>
