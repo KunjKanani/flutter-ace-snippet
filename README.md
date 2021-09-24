@@ -61,7 +61,7 @@ navigatorPush | Gives Navigator.push() with initial structure | Navigator.push(<
 navigatorPop | Gives a Navigator.pop() method | Navigator.pop(context);
 navigatorPushName | Gives Navigator.pushNamed method with initial parameter |Navigator.pushNamed(context, "/myHomePage");
 
-| Builders Widget Snippets |||
+|| Builders Widget Snippets ||
 ----------- | ----------- | ----------- |
 **Prefix** | **Description** | **Code** |
 lvBuild | Gives a ListView.builder with initial properties | ListView.builder(<br>&nbsp;itemCount: 0,<br>&nbsp;shrinkWrap: true,<br>&nbsp;scrollDirection: Axis.vertical,<br>&nbsp;itemBuilder: (context, index) {<br>&nbsp;&nbsp;return Text("ListView.builder");<br>&nbsp;},<br>)
@@ -76,13 +76,13 @@ layoutBuild | Gives a LayoutBuilder with initial properties | LayoutBuilder(<br>
 futureBuild | Gives a FutureBuilder with initial properties | FutureBuilder(<br>&nbsp;future: future,<br>&nbsp;initialData: initialData,<br>&nbsp;builder: (context, snapshot) {<br>&nbsp;&nbsp;return Text("Future Builder");<br>&nbsp;},<br>)
 tweenBuild | Gives a TweenAnimationBuilder with initial properties | TweenAnimationBuilder(<br>&nbsp;duration: const Duration(),<br>&nbsp;tween: Tween(),<br>&nbsp;builder: (BuildContext context, dynamic value, Widget? child) {<br>&nbsp;&nbsp;return Text("Tween Animation Builder");<br>&nbsp;},<br>),
 
-| Advance Widget Snippets |||
+|| Advance Widget Snippets ||
 ----------- | ----------- | ----------- |
 **Prefix** | **Description** | **Code** |
 cClipper | Gives a class that exetnds CustomClipper with override method |  import 'package:flutter/cupertino.dart';<br>class NameClipper extends CustomClipper<Path> {<br><br>&nbsp;@override<br>&nbsp;Path getClip(Size size) {<br>&nbsp;&nbsp;// TODO: implement getClip<br>&nbsp;&nbsp;throw UnimplementedError();<br>&nbsp;}<br><br>&nbsp;bool shouldReclip(covariant CustomClipper<Path> oldClipper) => false;<br>} 
 cPainter | Gives a class that exetnds CustomPainter with override method |  import 'package:flutter/material.dart';<br>class namePainter extends CustomPainter {<br><br>&nbsp;@override<br>&nbsp;void paint(Canvas canvas, Size size) {<br><br>&nbsp;}<br>&nbsp;@override<br>&nbsp;bool shouldRepaint(namePainter oldDelegate) => false;<br><br>&nbsp;@override<br>&nbsp;bool shouldRebuildSemantics(namePainter oldDelegate) => false;<br>} 
 
-| Margin & Padding Snippets |||
+|| Margin & Padding Snippets ||
 ----------- | ----------- | ----------- |
 **Prefix** | **Description** | **Code** |
 padAll &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Gives a padding property with EdgeInsets.All() method with inital parameter | padding: EdgeInsets.all(8), 
@@ -94,7 +94,7 @@ marLTRB | Gives a margin property with EdgeInsets.fromLTRB() method with inital 
 marSym | Gives a margin property with EdgeInsets.symmetric() method with inital parameter | margin: EdgeInsets.symmetric(horizontal: 0, vertical: 0),
 marOnly | Gives a margin property with EdgeInsets.only() method | margin: EdgeInsets.only(),
 
-| Widget's Properties & Var Declaration Snippets |||
+|| Widget's Properties & Var Declaration Snippets ||
 ----------- | ----------- | ----------- |
 **Prefix** | **Description** | **Code** |
 width | Gives width property with MediaQuery Width | width: MediaQuery.of(context).size.width,
@@ -104,13 +104,13 @@ brCircular | Gives borderRadius property with BorderRadius.circular() method | b
 colorHax | Gives color property with Color object initial argument | color: Color(0xFF9C27B0),
 list | Gives a List with initial assignment | List<String> listName = \[<br><br>\];
 
-| Provider Snippets |||
+|| Provider Snippets ||
 ----------- | ----------- | ----------- |
 **Prefix** | **Description** | **Code** |
 changeNotiFier | Gives a class that extends ChangeNotifier with one demo variable | import 'package:flutter/material.dart';<br><br>class MySchedule extends ChangeNotifier {<br>&nbsp;int _count = 0;<br><br>&nbsp;int get count => _count;<br><br>&nbsp;set count(int value) {<br>&nbsp;&nbsp;_count = value;<br>&nbsp;&nbsp;notifyListeners();<br>&nbsp;}<br>}
 consumer | Gives Consumer widget with initial properties | Consumer<T>(<br>&nbsp;builder: (context, value, child) {<br>&nbsp;&nbsp;return Text("Provider Consumer");<br>&nbsp;},<br>)
 
-| Get Snippets |||
+|| Get Snippets ||
 ----------- | ----------- | ----------- |
 **Prefix** | **Description** | **Code** |
 getController | Gives a class that extends GetxController with one demo variable | import 'package:get/get.dart';<br><br>class NameController extends GetxController {<br>&nbsp;var number = 0.obs;<br>&nbsp;void changeValue(val) => number.value = val;<br>}
