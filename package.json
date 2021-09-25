@@ -4,7 +4,7 @@
     "description": "Flutter Ace Snippet collection of best snippets available for flutter. It supports Provider and GetX as well. Once you use it, fall in love with Flutter Ace.", 
     "version": "1.0.0",
     "icon": "logo.png",
-    "publisher": "Kunj Kanani",
+    "publisher": "KunjKanani",
     "engines": {
         "vscode": "^1.54.0"
     },
